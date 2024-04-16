@@ -1,0 +1,12 @@
+
+{{template "header.html"}}
+<h1 class="title">
+	ABOUT PAGE
+</h1>
+{{ range .slices }}
+<p> start</p>
+<p>{{ .Content | upper }}</p>
+<p> middle</p>
+<p> {{ .Ronot }}</p>
+{{ end }}
+{{template "footer.html"}}
